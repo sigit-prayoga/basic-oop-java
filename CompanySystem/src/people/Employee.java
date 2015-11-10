@@ -5,6 +5,7 @@ public class Employee {
 	protected String id;
 	protected int yearJoined;
 	protected int totalAbsence;
+	public static final int ANNUAL_LEAVE = 14;
 	
 	/**
 	 * TODO: 
@@ -41,6 +42,19 @@ public class Employee {
 	public long getTotalSalary() {
 		long totalSalary = getSalary() - getDeductedSalary();
 		return totalSalary;
+	}
+	
+	public long getYearJoined(){
+		return yearJoined;
+	}
+		
+	public int getAnnualLeave(){
+		return ANNUAL_LEAVE;
+	}
+	
+	public long getBonus(){
+		long bonus = (long) ((getSalary() / yearJoined ) * 0.5);
+		return bonus;
 	}
 	
 }
