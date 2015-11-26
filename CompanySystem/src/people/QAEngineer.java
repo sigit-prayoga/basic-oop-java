@@ -14,4 +14,16 @@ public class QAEngineer extends Employee {
 		super(name, id);
 		this.age = age;
 	}
+	
+	@Override
+	public long getSalary() {
+		long qaSalary = super.getSalary() + 1000000;
+		return qaSalary;
+	}
+	
+	@Override
+	public long getTotalSalary() {
+		long withBonus = super.getTotalSalary() + 500000;
+		return withBonus;
+	}
 }
