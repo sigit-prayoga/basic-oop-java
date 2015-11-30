@@ -1,0 +1,18 @@
+package traininginher;
+
+public class Persegipanjang extends Bangun{
+	int panjang = 2;
+	int lebar = 3;
+	int luas;
+	int keliling;
+	
+public void luas(){
+	luas = panjang * lebar;
+	System.out.println("Luas Persegi Panjang adalah "+ luas);
+	}
+
+public void keliling(){
+	keliling = (2 * (panjang + lebar));
+	System.out.println("keliling Persegi Panjang adalah "+ keliling);
+}
+}

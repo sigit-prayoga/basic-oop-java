@@ -1,0 +1,17 @@
+package traininginher;
+
+public class Lingkaran extends Bangun{
+	int jarijari = 7;
+	double luas;
+	double keliling;
+	
+public void luas(){
+	luas = 3.14 * jarijari * jarijari;
+	System.out.println("Luas Lingkaran adalah "+ luas);
+}
+
+public void keliling(){
+	keliling = 3.14 * jarijari * 2;
+	System.out.println("Keliling Lingkaran adalah "+ keliling);
+}
+}

@@ -1,11 +1,18 @@
 package people;
 
+import interfaces.Calendar;
+import interfaces.Handphone;
+
 public class Employee {
 	protected String name;
 	protected String id;
 	protected int yearJoined;
 	protected int totalAbsence;
-	public static final int ANNUAL_LEAVE = 14;
+	
+	public Employee(String name, String id){
+		this.setName(name);
+		this.id = id;
+	}
 	
 	/**
 	 * TODO: 
@@ -14,6 +21,11 @@ public class Employee {
 	 * Hitung c-off dengan Sisa Cuti,
 	 * Tambahkan limit cuti 14 hari dengan menggunakan constant,
 	 */
+	
+	public void callCustomer(Handphone handphone, String number, Calendar calendar){
+		handphone.callSomeone(number);
+		calendar.createEvent("19112015", number);
+	}
 	
 	/**
 	 * @return UMR Jakarta
@@ -43,18 +55,13 @@ public class Employee {
 		long totalSalary = getSalary() - getDeductedSalary();
 		return totalSalary;
 	}
-	
-	public long getYearJoined(){
-		return yearJoined;
+
+	public String getName() {
+		return name;
 	}
-		
-	public int getAnnualLeave(){
-		return ANNUAL_LEAVE;
-	}
-	
-	public long getBonus(){
-		long bonus = (long) ((getSalary() / yearJoined ) * 0.5);
-		return bonus;
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 }

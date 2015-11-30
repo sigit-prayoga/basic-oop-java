@@ -1,0 +1,14 @@
+package traininginher;
+
+public class Bangun {
+	int luas;
+	int keliling;
+	
+public void luas(){
+	System.out.println("Bangun datar memiliki luas");
+}
+
+public void keliling(){
+	System.out.println("Bangun datar memiliki keliling");
+}
+}

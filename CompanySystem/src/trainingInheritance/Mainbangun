@@ -1,0 +1,18 @@
+package traininginher;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Lingkaran a = new Lingkaran();
+		a.luas();
+		a.keliling();
+		
+		Persegipanjang b = new Persegipanjang();
+		b.luas();
+		b.keliling();
+		
+		Bangun c = new Bangun();
+		c.luas();
+		c.keliling();
+	}
+}
