@@ -1,5 +1,9 @@
 package main;
+import java.util.ArrayList;
+
+import absens.absensi;
 import invetories.Laptop;
+import people.Employee;
 import people.QAEngineer;
 import people.SoftwareEngineer;
 
@@ -71,6 +75,15 @@ public class Main {
 
 
 		System.out.println("Total salary he got is" );
-			
+		
+		absensi absen = new absensi();
+		absen.addEmployee( new SoftwareEngineer("Fhadel", "010", 21, 2015, 4000000));
+		absen.addEmployee(new SoftwareEngineer("Denny", "002", 22, 2015, 4300000));
+		absen.addEmployee(new Employee("Denny", "ID01"));
+		ArrayList<Employee> lol = new ArrayList<Employee>();
+		lol= absen.getListAbsen();
+		for(int i=0;i<lol.size();i++){
+			System.out.println(lol.get(i).getId());
+		}	
 	}
 }
