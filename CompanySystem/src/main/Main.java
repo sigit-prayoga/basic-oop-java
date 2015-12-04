@@ -71,6 +71,24 @@ public class Main {
 
 
 		System.out.println("Total salary he got is" );
-			
+		System.out.println();
+		System.out.println("------------------------------------------------------");
+		QAEngineer thio = new QAEngineer("Thio", "ID3", 23, 2015, 1);
+		thio.setTotalAbsence(1);
+		System.out.println("The employee's data: ");
+		System.out.println("Name: "+thio.getName());
+		System.out.println("ID: "+thio.getId());
+		System.out.println("Age: "+thio.getAge());
+		System.out.println("Year Joined: "+thio.getYearJoined());
+		System.out.println("Basic salary: "+thio.getSalary());
+		System.out.println("Total number of tested bugs: " + thio.getTotalTestedBugs());
+		System.out.println("Total percent bonus: " + thio.getPercentBonus());
+		System.out.println("Total bonus: "+thio.getBonus());
+		System.out.println("Total absent: "+thio.getTotalAbsence());
+		System.out.println("Total deducted salary: "+thio.getDeductedSalary());
+		System.out.println("Total salary: "+ thio.getTotalSalary());
+		System.out.println("------------------------------------------------------");
+//		System.out.println(thio.getPercentBonus());
+//		System.out.println(thio.getBonus()); System.out.println(thio.getTotalSalary());
 	}
 }
