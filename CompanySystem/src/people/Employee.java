@@ -47,7 +47,7 @@ public class Employee {
 		if (getTotalAbsence() == 0) {
 			return 0;
 		}
-		long salaryPerDay = getSalary() / 25;
+		long salaryPerDay = getSalary() / 20;
 		return salaryPerDay * getTotalAbsence();
 	}
 	

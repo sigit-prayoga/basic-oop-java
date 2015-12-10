@@ -1,4 +1,4 @@
-package sampleofinterface;
+package invetories;
 import interfaces.Calendar;
 import interfaces.Handphone;
 
